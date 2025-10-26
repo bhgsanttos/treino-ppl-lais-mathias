@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plano de Treino PPL - Laís Mathias</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        .container {
+            width: 95%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #007bff;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        h2 {
+            color: #28a745;
+            border-bottom: 2px solid #28a745;
+            padding-bottom: 5px;
+            margin-top: 25px;
+        }
+        .header-info {
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #e9ecef;
+            border-radius: 8px;
+        }
+        .header-info p {
+            margin: 5px 0;
+            font-size: 1.1em;
+        }
+        .day-section {
+            margin-bottom: 30px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            background-color: #f9f9f9;
+        }
+        .day-title {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border-radius: 6px 6px 0 0;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-align: center;
+            margin: -15px -15px 15px -15px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            padding: 8px 5px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+            font-size: 0.9em;
+        }
+        th {
+            background-color: #e9ecef;
+            color: #495057;
+            font-weight: 600;
+        }
+        tr:nth-child(even) {
+            background-color: #f7f7f7;
+        }
+        .observacoes {
+            margin-top: 15px;
+            padding: 10px;
+            border-left: 4px solid #ffc107;
+            background-color: #fffbe6;
+            font-style: italic;
+        }
+        .aerobico td:first-child {
+            font-weight: bold;
+            color: #28a745;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+            thead tr {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+            tr {
+                border: 1px solid #ccc;
+                margin-bottom: 10px;
+                border-radius: 6px;
+            }
+            td {
+                border: none;
+                border-bottom: 1px solid #eee;
+                position: relative;
+                padding-left: 50%;
+                text-align: right;
+            }
+            td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 6px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+                text-align: left;
+                font-weight: bold;
+                color: #555;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Plano de Treino Personalizado</h1>
+        <div class="header-info">
+            <p><strong>Aluna:</strong> Laís Mathias</p>
+            <p><strong>Foco:</strong> Emagrecimento, Redução de Gordura Visceral, Ganho/Manutenção de Massa Muscular</p>
+            <p><strong>Divisão:</strong> PPL + Upper Body (Segunda a Sexta)</p>
+        </div>
+
+        <h2>Instruções Gerais e Segurança</h2>
+        <div class="observacoes">
+            <p><strong>PRIORIDADE ABSOLUTA:</strong> Segurança e Baixo Impacto. Foque na técnica antes da carga. Evite qualquer exercício que cause dor articular (joelho, tornozelo, lombar).</p>
+            <p><strong>AQUECIMENTO (Pré-Força):</strong> 5-10 min de bicicleta/elíptico + 5 min de Mobilidade Dinâmica.</p>
+            <p><strong>AERÓBICO (Pós-Força):</strong> 15-20 min em FC Moderada (Bicicleta ou Elíptico).</p>
+        </div>
+
+        <div class="day-section">
+            <div class="day-title">SEGUNDA-FEIRA: PUSH (Empurrar)</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Exercício</th>
+                        <th>Séries</th>
+                        <th>Reps</th>
+                        <th>Observações Técnicas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Exercício">1. Supino Máquina (Peito)</td>
+                        <td data-label="Séries">3</td>
+                        <td data-label="Reps">12-15</td>
+                        <td data-label="Observações Técnicas">Amplitude controlada, sem travar o cotovelo.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Exercício">2. Desenvolvimento Máquina (Ombro)</td>
+                        <td data-label="Séries">3</td>
+                        <td data-label="Reps">12-15</td>
+                        <td data-label="Observações Técnicas">Movimento lento e controlado, evitar impulso.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Exercício">3. Elevação Frontal Cabo (Ombro)</td>
+                        <td data-label="Séries">3</td>
+                        <td data-label="Reps">12</td>
+                        <td data-label="Observações Técnicas">Subir até a altura do ombro, sem balançar o corpo.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Exercício">4. Crucifixo Máquina/Cabo (Peito)</td>
+                        <td data-label="Séries">3</td>
+                        <td data-label="Reps">15-20</td>
+                        <td data-label="Observações Técnicas">Foco em espremer o peito. Movimento concêntrico lento (na volta).</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Exercício">5. Tríceps Pulley Corda</td>
+                        <td data-label="Séries">3</td>
+                        <td data-label="Reps">12-15</td>
+                        <td data-label="Observações Técnicas">Braços colados ao corpo, focar na extensão total do cotovelo.</td>
+                    </tr>
+                    <tr class="aerobico">
+                        <td data-label="Exercício">6. Aeróbico Pós-Treino</td>
+                        <td data-label="Séries">1</td>
+                        <td data-label="Reps">15 min</td>
+                        <td data-label="Observações Técnicas">Bicicleta ou Elíptico.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="day-section">
+            <div class="day-title">TERÇA-FEIRA: PULL (Puxar)</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Exercício</th>
+                        <th>Séries</th>
+                        <th>Reps</th>
+                        <th>Observações Técnicas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Exercício">1. Puxada Alta Máquina (Costas)</td>
+                        <td data-label="Séries">3</td>
+                        <td data-label="Reps">12-15</td>
+                        <td data-label="Observações Técnicas">Peito estufado, puxar em direção ao peito.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Exercício">2. Remada Sentada Máquina (Costas)</td>
+                        <td data-label="Séries">3</td>
+                        <td data-label="Reps">12-15</td>
+                        <td data-label="Observações Técnicas">Espremer as escápulas, movimento lento e controlado.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Exercício">3. Remada Alta Cabo (Ombro/Trapézio)</td>
+                        <td data-label="Séries">3</td>
+                        <td data-label="Reps">15</td>
+                        <td data-label="Observações Técnicas">Cotovelos mais altos que as mãos, até a altura do queixo.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Exercício">4. Rosca Direta Halteres (Bíceps)</td>
+                        <td data-label="Séries">3</td>
+                        <td data-label="Reps">12</td>
+                        <td data-label="Observações Técnicas">Sem balançar o corpo, focar na contração do bíceps.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Exercício">5. Rosca Martelo Halteres</td>
+                        <td data-label="Séries">3</td>
+                        <td data-label="Reps">15</td>
+                        <td data-label="Observações Técnicas">Movimento simultâneo ou alternado.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Exercício">6. Abdominal Crunch Máquina/Solo Curto</td>
+                        <td data-label="Séries">3</td>
+                        <td data-label="Reps">15-20</td>
+                        <td data-label="Observações Técnicas">Foco em enrolar a coluna, sem forçar o pescoço.</td>
+                    </tr>
+                    <tr class="aerobico">
+                        <td data-label="Exercício">7. Aeróbico Pós-Treino</td>
+                        <td data-label="Séries">1</td>
+                        <td data-label="Reps">15 min</td>
+                        <td data-label="Observações Técnicas">Bicicleta ou Elíptico.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="day-section">
+            <div class="day-title">QUARTA-FEIRA: DESCANSO ATIVO / CARDIO OBRIGATÓRIO</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Atividade</th>
+                        <th>Duração</th>
+                        <th>Intensidade</th>
+                        <th>Observações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="aerobico">
+                        <td data-label="Atividade">Aeróbico Contínuo</td>
+                        <td data-label="Duração">30 - 45 min</td>
+                        <td data-label="Intensidade">Moderada</td>
+                        <td data-label="Observações">Escolher 1 opção de baixo impacto: Caminhada Rápida, Elíptico ou Bicicleta Ergométrica.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="day-section">
+            <div class="day-title">QUINTA-FEIRA: LEGS (Pernas)</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Exercício</th>
+                        <th>Séries</th>
+                        <th>Reps</th>
+                        <th>Observações Técnicas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Exercício">1. Cadeira Extensora (Quadríceps)</td>
+                        <td data-label="Séries">4</td>
+                        <td data-label="Reps">12-15</td>
+                        <td data-label="Observações Técnicas">Extensão total, segurar 1 segundo no topo da contração.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Exercício">2. Cadeira Flexora (Isquiotibiais)</td>
+                        <td data-label="Séries">4</td>
+                        <td data-label="Reps">12-15</td>
+                        <td data-label="Observações Técnicas">Movimento lento, sem tirar o quadril do assento.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Exercício">3. Leg Press 45º</td>
+                        <td data-label="Séries">3</td>
+                        <td data-label="Reps">15-20</td>
+                        <td data-label="Observações Técnicas">Ênfase no número de repetições. Não descer demais para proteger os joelhos.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Exercício">4. Adução Máquina</td>
+                        <td data-label="Séries">3</td>
+                        <td data-label="Reps">15-20</td>
+                        <td data-label="Observações Técnicas">Movimento lento e controlado.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Exercício">5. Elevação de Panturrilha Sentada</td>
+                        <td data-label="Séries">3</td>
+                        <td data-label="Reps">15-20</td>
+                        <td data-label="Observações Técnicas">Focar na amplitude total (máximo alongamento e máxima contração).</td>
+                    </tr>
+                    <tr class="aerobico">
+                        <td data-label="Exercício">6. Aeróbico Pós-Treino</td>
+                        <td data-label="Séries">1</td>
+                        <td data-label="Reps">15 min</td>
+                        <td data-label="Observações Técnicas">Bicicleta ou Elíptico.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="day-section">
+            <div class="day-title">SEXTA-FEIRA: UPPER BODY (Corpo Superior Geral)</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Exercício</th>
+                        <th>Séries</th>
+                        <th>Reps</th>
+                        <th>Observações Técnicas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Exercício">1. Remada Cabo Unilateral (Costas)</td>
+                        <td data-label="Séries">3</td>
+                        <td data-label="Reps">12 (cada lado)</td>
+                        <td data-label="Observações Técnicas">Focar na estabilidade do tronco, puxar em direção ao quadril.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Exercício">2. Supino Inclinado Halteres (Peito)</td>
+                        <td data-label="Séries">3</td>
+                        <td data-label="Reps">10-12</td>
+                        <td data-label="Observações Técnicas">Controle a descida do peso (fase excêntrica lenta).</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Exercício">3. Elevação Lateral Halteres/Cabo (Ombro)</td>
+                        <td data-label="Séries">3</td>
+                        <td data-label="Reps">12-15</td>
+                        <td data-label="Observações Técnicas">Leve, foco no isolamento, não subir acima do ombro.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Exercício">4. Face Pull (Ombro Posterior/Rotadores)</td>
+                        <td data-label="Séries">3</td>
+                        <td data-label="Reps">15</td>
+                        <td data-label="Observações Técnicas">Puxar o cabo em direção ao rosto, **essencial para a postura**.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Exercício">5. Bíceps Concentrado</td>
+                        <td data-label="Séries">3</td>
+                        <td data-label="Reps">12 (cada lado)</td>
+                        <td data-label="Observações Técnicas">Foco total na contração, sem balançar o corpo.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Exercício">6. Tríceps Testa Halteres Deitado</td>
+                        <td data-label="Séries">3</td>
+                        <td data-label="Reps">15</td>
+                        <td data-label="Observações Técnicas">Cotovelos fixos, descer até a testa/orelha.</td>
+                    </tr>
+                    <tr class="aerobico">
+                        <td data-label="Exercício">7. Aeróbico Pós-Treino</td>
+                        <td data-label="Séries">1</td>
+                        <td data-label="Reps">15 min</td>
+                        <td data-label="Observações Técnicas">Bicicleta ou Elíptico.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="observacoes" style="border-left-color: #dc3545; background-color: #f8d7da; color: #721c24; margin-top: 30px;">
+            <p><strong>REVISÃO/PROGRESSÃO:</strong> Este treino deve ser mantido por 4 a 6 semanas. Após este período, avalie a aderência, a evolução da força e a tolerância articular para realizar ajustes (aumentar a carga, o volume ou incluir exercícios multiarticulares mais complexos, como agachamento com peso corporal ou goblet squat, se a dor articular permitir).</p>
+        </div>
+    </div>
+</body>
+</html>
